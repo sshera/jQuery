@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+    <script>
+      $("document").ready(function(){
+          $("#append").click(function(){
+              $("p:first").append(" I just appended some copy!");
+          });
+          $("#prepend").click(function(){
+              $("p:first").prepend("I just prepended some copy! ");
+          })
+      });
+    </script>
+    <style>
+     
+    </style>
+</head>
+<body>
+    <a id="append" href="#">Append</a>
+    <a id="prepend" href="#">Prepend</a>
+    <div id="container">
+    <p>1 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    Nobis fuga veniam aut! Sapiente officia sed itaque similique! Ex repellat,
+    asperiores veritatis magnam iusto velit eaque iure maiores rem, in aspernatur?</p>
+    <p>2 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    Nobis fuga veniam aut! Sapiente officia sed itaque similique! Ex repellat,
+    asperiores veritatis magnam iusto velit eaque iure maiores rem, in aspernatur?</p>  
+    <p>3 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    Nobis fuga veniam aut! Sapiente officia sed itaque similique! Ex qui repellat,
+    asperiores veritatis magnam iusto velit eaque iure maiores rem, in aspernatur?</p>
+    </div>
+</body>
+</html>
